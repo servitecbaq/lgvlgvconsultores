@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LEGAL CONSULTORES S.A.S - Firma de abogados con enfoque humano. Asesoría legal y contable en toda Colombia. Consulta gratuita.">
+    <meta name="keywords" content="abogados Colombia, asesoría legal, asesoría contable, consultores legales, derecho laboral, derecho civil">
+    <meta name="author" content="LEGAL CONSULTORES S.A.S">
+    <title>LEGAL CONSULTORES S.A.S | Asesoría Legal y Contable en Colombia</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#inicio" class="logo">
+                <span class="logo__icon"><i class="fas fa-balance-scale"></i></span>
+                <div class="logo__text">
+                    <span class="logo__title">LGV</span>
+                    <span class="logo__subtitle">Legal Consultores</span>
+                </div>
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="#inicio" class="nav__link">Inicio</a></li>
+                    <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+                    <li><a href="#servicios" class="nav__link">Servicios</a></li>
+                    <li><a href="#valores" class="nav__link">Valores</a></li>
+                    <li><a href="#contacto" class="nav__link">Contacto</a></li>
+                </ul>
+                <a href="#contacto" class="btn btn--primary nav__cta">Consulta Gratuita</a>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio">
+        <div class="hero__overlay"></div>
+        <div class="container hero__container">
+            <div class="hero__content">
+                <span class="hero__badge">
+                    <i class="fas fa-shield-alt"></i> Desde 2021 acompañando a Colombia
+                </span>
+                <h1 class="hero__title">
+                    Asesoría Legal y Contable con <span class="highlight">Enfoque Humano</span>
+                </h1>
+                <p class="hero__subtitle">
+                    Somos un equipo de profesionales comprometidos con la defensa de tus derechos. 
+                    Ofrecemos servicios legales y contables en todo el país, presencial y virtual.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#contacto" class="btn btn--primary">
+                        <i class="fas fa-comments"></i> Solicita tu Consulta
+                    </a>
+                    <a href="#servicios" class="btn btn--outline">
+                        Ver Servicios <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hero__stats">
+                    <div class="stat">
+                        <span class="stat__number">+3</span>
+                        <span class="stat__label">Años de experiencia</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">100%</span>
+                        <span class="stat__label">Cobertura nacional</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">+500</span>
+                        <span class="stat__label">Clientes satisfechos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NOSOTROS ===== -->
+    <section class="about section" id="nosotros">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Sobre Nosotros</span>
+                <h2 class="section__title">¿Quiénes Somos?</h2>
+                <p class="section__subtitle">
+                    Profesionales comprometidos con la justicia y el bienestar de nuestros clientes.
+                </p>
+            </div>
+
+            <div class="about__grid">
+                <div class="about__content">
+                    <p class="about__text">
+                        En <strong>2021</strong> empezamos como una empresa de asesoría legal y contable. 
+                        Destacamos por ser un equipo de profesionales con un <strong>enfoque humano</strong>, 
+                        creando relaciones de confianza y transparencia con nuestros clientes.
+                    </p>
+                    <p class="about__text">
+                        Ofrecemos servicios en todo el país, tanto <strong>en persona</strong> como a través de 
+                        <strong>plataformas virtuales</strong> para hacer que sea más fácil y económico acceder 
+                        a nuestra ayuda. Nos esforzamos por añadir valor a nuestra sociedad colombiana, ya que 
+                        a través de nuestras redes sociales compartimos información sobre los derechos y 
+                        responsabilidades de los ciudadanos.
+                    </p>
+
+                    <ul class="about__features">
+                        <li><i class="fas fa-check-circle"></i> Atención personalizada</li>
+                        <li><i class="fas fa-check-circle"></i> Precios accesibles</li>
+                        <li><i class="fas fa-check-circle"></i> Equipo multidisciplinario</li>
+                        <li><i class="fas fa-check-circle"></i> Compromiso social</li>
+                    </ul>
+
+                    <a href="#contacto" class="btn btn--primary">Conoce más</a>
+                </div>
+
+                <div class="about__image">
+                    <div class="about__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80" 
+                             alt="Equipo de abogados de LEGAL CONSULTORES" loading="lazy">
+                        <div class="about__badge">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <strong>+3 años</strong>
+                                <span>de experiencia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICIOS ===== -->
+    <section class="services section" id="servicios">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Nuestros Servicios</span>
+                <h2 class="section__title">Áreas de Práctica</h2>
+                <p class="section__subtitle">
+                    Ofrecemos asesoría integral en las principales ramas del derecho y la contabilidad.
+                </p>
+            </div>
+
+            <div class="services__grid">
+                <article class="service-card">
+                    <div class="service-card__icon"><i class="fas fa-briefcase"></i></div>
+                    <h3 class="service-card__title">Derecho Laboral</h3>
+                    <p class="service-card__text">
+                        Asesoría en contratos, despidos, liquidaciones, demandas laborales y seguridad social.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-card__icon"><i class="fas fa-file-contract"></i></div>
+                    <h3 class="service-card__title">Derecho Civil</h3>
+                    <p class="service-card__text">
+                        Contratos, responsabilidad civil, sucesiones, propiedad horizontal y procesos ejecutivos.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-card__icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="service-card__title">Asesoría Contable</h3>
+                    <p class="service-card__text">
+                        Contabilidad, declaraciones tributarias, nómina y asesoría financiera para empresas.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-card__icon"><i class="fas fa-building"></i></div>
+                    <h3 class="service-card__title">Derecho Comercial</h3>
+                    <p class="service-card__text">
+                        Constitución de sociedades, contratos mercantiles, propiedad intelectual y marcas.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-card__icon"><i class="fas fa-users"></i></div>
+                    <h3 class="service-card__title">Derecho de Familia</h3>
+                    <p class="service-card__text">
+                        Divorcios, custodia, alimentos, uniones maritales y procesos de sucesión.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-card__icon"><i class="fas fa-handshake"></i></div>
+                    <h3 class="service-card__title">Consultoría Empresarial</h3>
+                    <p class="service-card__text">
+                        Asesoría integral para PYMES, emprendedores y empresas en crecimiento.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VALORES ===== -->
+    <section class="values section" id="valores">
+        <div class="container">
+            <div class="section__header section__header--light">
+                <span class="section__tag section__tag--light">Lo que nos define</span>
+                <h2 class="section__title section__title--light">Nuestros Valores</h2>
+                <p class="section__subtitle section__subtitle--light">
+                    Los principios que guían cada uno de nuestros servicios.
+                </p>
+            </div>
+
+            <div class="values__grid">
+                <div class="value-card">
+                    <div class="value-card__icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Responsabilidad</h3>
+                    <p>Asumimos cada caso con seriedad y compromiso absoluto.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-card__icon"><i class="fas fa-eye"></i></div>
+                    <h3>Transparencia</h3>
+                    <p>Comunicación clara y honesta en todo momento.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-card__icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Confianza</h3>
+                    <p>Construimos relaciones duraderas basadas en la credibilidad.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-card__icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Eficacia</h3>
+                    <p>Resultados oportunos y soluciones efectivas.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-card__icon"><i class="fas fa-heart"></i></div>
+                    <h3>Comprensión</h3>
+                    <p>Escuchamos y entendemos las necesidades de cada cliente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ENCUESTA ===== -->
+    <section class="survey section">
+        <div class="container">
+            <div class="survey__box">
+                <div class="survey__icon"><i class="fas fa-star"></i></div>
+                <h2 class="survey__title">Tu opinión es muy importante para nosotros</h2>
+                <p class="survey__text">
+                    Queremos saber cómo ha sido tu experiencia con nuestros servicios. 
+                    Tu retroalimentación nos ayuda a mejorar cada día.
+                </p>
+                <a href="#" class="btn btn--primary" target="_blank" rel="noopener">
+                    <i class="fas fa-clipboard-check"></i> Diligenciar Encuesta
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="contact section" id="contacto">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Contáctanos</span>
+                <h2 class="section__title">Ponte en Contacto</h2>
+                <p class="section__subtitle">
+                    ¿Tienes preguntas, comentarios o quieres contratar nuestros servicios? 
+                    ¡Estaremos respondiéndote lo más pronto posible!
+                </p>
+            </div>
+
+            <div class="contact__grid">
+                <!-- Información de contacto -->
+                <div class="contact__info">
+                    <div class="contact__item">
+                        <div class="contact__item-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Teléfonos</h4>
+                            <a href="tel:3148695606">314 869 5606</a><br>
+                            <a href="tel:3238097573">323 809 7573</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <div class="contact__item-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Correo Electrónico</h4>
+                            <a href="mailto:heyojoalderecho@gmail.com">heyojoalderecho@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <div class="contact__item-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>Horarios de Atención</h4>
+                            <p>Lunes a viernes: 8:00 a.m. – 5:00 p.m.</p>
+                            <p>Sábados: 8:00 a.m. – 12:00 p.m.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <div class="contact__item-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Cobertura</h4>
+                            <p>Servicios en todo el territorio colombiano, presencial y virtual.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <form class="contact__form" id="contactForm" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="314 000 0000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto *</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona un servicio</option>
+                            <option value="laboral">Derecho Laboral</option>
+                            <option value="civil">Derecho Civil</option>
+                            <option value="contable">Asesoría Contable</option>
+                            <option value="comercial">Derecho Comercial</option>
+                            <option value="familia">Derecho de Familia</option>
+                            <option value="empresarial">Consultoría Empresarial</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--block">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                    </button>
+                    <p class="form-note">* Campos obligatorios</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <div class="logo logo--light">
+                        <span class="logo__icon"><i class="fas fa-balance-scale"></i></span>
+                        <div class="logo__text">
+                            <span class="logo__title">LGV</span>
+                            <span class="logo__subtitle">Legal Consultores</span>
+                        </div>
+                    </div>
+                    <p class="footer__text">
+                        Firma de abogados con enfoque humano, comprometida con la defensa 
+                        de tus derechos y el bienestar de la sociedad colombiana.
+                    </p>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer__links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#valores">Valores</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Servicios</h4>
+                    <ul class="footer__links">
+                        <li><a href="#servicios">Derecho Laboral</a></li>
+                        <li><a href="#servicios">Derecho Civil</a></li>
+                        <li><a href="#servicios">Asesoría Contable</a></li>
+                        <li><a href="#servicios">Derecho Comercial</a></li>
+                        <li><a href="#servicios">Derecho de Familia</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Contacto</h4>
+                    <ul class="footer__contact">
+                        <li><i class="fas fa-phone"></i> 314 869 5606</li>
+                        <li><i class="fas fa-phone"></i> 323 809 7573</li>
+                        <li><i class="fas fa-envelope"></i> heyojoalderecho@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Lun-Vie: 8am-5pm</li>
+                        <li><i class="fas fa-clock"></i> Sáb: 8am-12pm</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; <span id="year"></span> LEGAL CONSULTORES S.A.S. Todos los derechos reservados.</p>
+                <ul class="footer__legal">
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón WhatsApp flotante -->
+    <a href="https://wa.me/573148695606" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Botón volver arriba -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script>
+        // Año dinámico en el footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Menú móvil
+        const navToggle = document.getElementById('navToggle');
+        const nav = document.getElementById('nav');
+        navToggle.addEventListener('click', () => {
+            nav.classList.toggle('nav--open');
+            navToggle.classList.toggle('nav-toggle--active');
+        });
+
+        // Cerrar menú al hacer click en un enlace
+        document.querySelectorAll('.nav__link, .nav__cta').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('nav--open');
+                navToggle.classList.remove('nav-toggle--active');
+            });
+        });
+
+        // Header con scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('header--scrolled');
+            } else {
+                header.classList.remove('header--scrolled');
+            }
+        });
+
+        // Botón volver arriba
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backToTop.classList.add('back-to-top--visible');
+            } else {
+                backToTop.classList.remove('back-to-top--visible');
+            }
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Animación scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.section__header, .service-card, .value-card, .about__content, .about__image, .contact__info, .contact__form')
+            .forEach(el => observer.observe(el));
+
+        // Manejo del formulario
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('¡Gracias por contactarnos! Hemos recibido tu mensaje y te responderemos lo antes posible.');
+            e.target.reset();
+        });
+    </script>
+
+</body>
+</html>
