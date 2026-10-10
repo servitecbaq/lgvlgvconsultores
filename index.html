@@ -2,60 +2,39 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="LEGAL CONSULTORES S.A.S - Firma de abogados con enfoque humano. Asesoría legal y contable en toda Colombia. Consulta gratuita.">
     <meta name="keywords" content="abogados Colombia, asesoría legal, asesoría contable, consultores legales, derecho laboral, derecho civil">
     <meta name="author" content="LEGAL CONSULTORES S.A.S">
+    <meta name="theme-color" content="#1B2A4A">
     <title>LEGAL CONSULTORES S.A.S | Asesoría Legal y Contable en Colombia</title>
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="alternate icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="favicon.svg">
 
-    <!-- Google Fonts -->
+    <!-- Fuentes (fallback para Apple Fonts) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Open Graph / Facebook / WhatsApp -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lgvlegalconsultores.com/">
-    <meta property="og:title" content="LEGAL CONSULTORES S.A.S | Asesoría Legal y Contable">
-    <meta property="og:description" content="Firma de abogados con enfoque humano. Asesoría legal y contable en toda Colombia. Consulta gratuita.">
-    <meta property="og:image" content="https://lgvlegalconsultores.com/images/og-image.jpg">
-    <meta property="og:locale" content="es_CO">
-    <meta property="og:site_name" content="LEGAL CONSULTORES S.A.S">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LEGAL CONSULTORES S.A.S">
-    <meta name="twitter:description" content="Asesoría legal y contable con enfoque humano en toda Colombia.">
-    <meta name="twitter:image" content="https://lgvlegalconsultores.com/images/og-image.jpg">
-
-    <!-- Canonical -->
-    <link rel="canonical" href="https://lgvlegalconsultores.com/">
-
-    <!-- Theme color -->
-    <meta name="theme-color" content="#1B2A4A">
 </head>
 <body>
 
     <!-- ===== HEADER ===== -->
     <header class="header" id="header">
         <div class="container header__container">
-            <a href="#inicio" class="logo">
+            <a href="#inicio" class="logo" aria-label="LGV Legal Consultores - Inicio">
                 <span class="logo__icon"><i class="fas fa-balance-scale"></i></span>
-                <div class="logo__text">
+                <span class="logo__text">
                     <span class="logo__title">LGV</span>
-                    <span class="logo__subtitle">Legal Consultores</span>
-                </div>
+                    <span class="logo__divider"></span>
+                    <span class="logo__subtitle">LEGAL CONSULTORES</span>
+                </span>
             </a>
 
             <nav class="nav" id="nav">
@@ -69,17 +48,19 @@
                 <a href="#contacto" class="btn btn--primary nav__cta">Consulta Gratuita</a>
             </nav>
 
-            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </header>
 
+    <!-- Overlay menú móvil -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
     <!-- ===== HERO ===== -->
     <section class="hero" id="inicio">
         <div class="hero__overlay"></div>
         <div class="container hero__container">
-            
             <div class="hero__content">
                 <span class="hero__badge">
                     <i class="fas fa-shield-alt"></i> Desde 2021 acompañando a Colombia
@@ -88,7 +69,7 @@
                     Asesoría Legal y Contable con <span class="highlight">Enfoque Humano</span>
                 </h1>
                 <p class="hero__subtitle">
-                    Somos un equipo de profesionales comprometidos con la defensa de tus derechos. 
+                    Somos un equipo de profesionales comprometidos con la defensa de tus derechos.
                     Ofrecemos servicios legales y contables en todo el país, presencial y virtual.
                 </p>
                 <div class="hero__buttons">
@@ -131,15 +112,15 @@
             <div class="about__grid">
                 <div class="about__content">
                     <p class="about__text">
-                        En <strong>2021</strong> empezamos como una empresa de asesoría legal y contable. 
-                        Destacamos por ser un equipo de profesionales con un <strong>enfoque humano</strong>, 
+                        En <strong>2021</strong> empezamos como una empresa de asesoría legal y contable.
+                        Destacamos por ser un equipo de profesionales con un <strong>enfoque humano</strong>,
                         creando relaciones de confianza y transparencia con nuestros clientes.
                     </p>
                     <p class="about__text">
-                        Ofrecemos servicios en todo el país, tanto <strong>en persona</strong> como a través de 
-                        <strong>plataformas virtuales</strong> para hacer que sea más fácil y económico acceder 
-                        a nuestra ayuda. Nos esforzamos por añadir valor a nuestra sociedad colombiana, ya que 
-                        a través de nuestras redes sociales compartimos información sobre los derechos y 
+                        Ofrecemos servicios en todo el país, tanto <strong>en persona</strong> como a través de
+                        <strong>plataformas virtuales</strong> para hacer que sea más fácil y económico acceder
+                        a nuestra ayuda. Nos esforzamos por añadir valor a nuestra sociedad colombiana, ya que
+                        a través de nuestras redes sociales compartimos información sobre los derechos y
                         responsabilidades de los ciudadanos.
                     </p>
 
@@ -155,7 +136,7 @@
 
                 <div class="about__image">
                     <div class="about__image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80" 
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=900&q=80"
                              alt="Equipo de abogados de LEGAL CONSULTORES" loading="lazy">
                         <div class="about__badge">
                             <i class="fas fa-award"></i>
@@ -180,56 +161,115 @@
                     Ofrecemos asesoría integral en las principales ramas del derecho y la contabilidad.
                 </p>
             </div>
-
             <div class="services__grid">
-                <article class="service-card">
-                    <div class="service-card__icon"><i class="fas fa-briefcase"></i></div>
-                    <h3 class="service-card__title">Derecho Laboral</h3>
-                    <p class="service-card__text">
-                        Asesoría en contratos, despidos, liquidaciones, demandas laborales y seguridad social.
-                    </p>
-                </article>
-
-                <article class="service-card">
-                    <div class="service-card__icon"><i class="fas fa-file-contract"></i></div>
-                    <h3 class="service-card__title">Derecho Civil</h3>
-                    <p class="service-card__text">
-                        Contratos, responsabilidad civil, sucesiones, propiedad horizontal y procesos ejecutivos.
-                    </p>
-                </article>
-
-                <article class="service-card">
-                    <div class="service-card__icon"><i class="fas fa-chart-line"></i></div>
-                    <h3 class="service-card__title">Asesoría Contable</h3>
-                    <p class="service-card__text">
-                        Contabilidad, declaraciones tributarias, nómina y asesoría financiera para empresas.
-                    </p>
-                </article>
-
-                <article class="service-card">
-                    <div class="service-card__icon"><i class="fas fa-building"></i></div>
-                    <h3 class="service-card__title">Derecho Comercial</h3>
-                    <p class="service-card__text">
-                        Constitución de sociedades, contratos mercantiles, propiedad intelectual y marcas.
-                    </p>
-                </article>
-
-                <article class="service-card">
-                    <div class="service-card__icon"><i class="fas fa-users"></i></div>
-                    <h3 class="service-card__title">Derecho de Familia</h3>
-                    <p class="service-card__text">
-                        Divorcios, custodia, alimentos, uniones maritales y procesos de sucesión.
-                    </p>
-                </article>
-
-                <article class="service-card">
-                    <div class="service-card__icon"><i class="fas fa-handshake"></i></div>
-                    <h3 class="service-card__title">Consultoría Empresarial</h3>
-                    <p class="service-card__text">
-                        Asesoría integral para PYMES, emprendedores y empresas en crecimiento.
-                    </p>
-                </article>
+    <!-- Derecho Laboral -->
+    <article class="service-card">
+        <div class="service-card__image">
+            <div class="service-card__slider">
+                <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=700&q=80" alt="Derecho Laboral - Equipo de trabajo" loading="lazy" class="active">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=700&q=80" alt="Derecho Laboral - Contrato laboral" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&q=80" alt="Derecho Laboral - Reunión de negocios" loading="lazy">
             </div>
+        </div>
+        <div class="service-card__icon"><i class="fas fa-briefcase"></i></div>
+        <div class="service-card__body">
+            <h3 class="service-card__title">Derecho Laboral</h3>
+            <p class="service-card__text">
+                Asesoría en contratos, despidos, liquidaciones, demandas laborales y seguridad social.
+            </p>
+        </div>
+    </article>
+
+    <!-- Derecho Civil -->
+    <article class="service-card">
+        <div class="service-card__image">
+            <div class="service-card__slider">
+                <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=700&q=80" alt="Derecho Civil - Firma de documentos" loading="lazy" class="active">
+                <img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?w=700&q=80" alt="Derecho Civil - Contratos legales" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=700&q=80" alt="Derecho Civil - Libros de derecho" loading="lazy">
+            </div>
+        </div>
+        <div class="service-card__icon"><i class="fas fa-file-contract"></i></div>
+        <div class="service-card__body">
+            <h3 class="service-card__title">Derecho Civil</h3>
+            <p class="service-card__text">
+                Contratos, responsabilidad civil, sucesiones, propiedad horizontal y procesos ejecutivos.
+            </p>
+        </div>
+    </article>
+
+    <!-- Asesoría Contable -->
+    <article class="service-card">
+        <div class="service-card__image">
+            <div class="service-card__slider">
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&q=80" alt="Asesoría Contable - Documentos financieros" loading="lazy" class="active">
+                <img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=700&q=80" alt="Asesoría Contable - Cálculos y análisis" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&q=80" alt="Asesoría Contable - Reporte financiero" loading="lazy">
+            </div>
+        </div>
+        <div class="service-card__icon"><i class="fas fa-chart-line"></i></div>
+        <div class="service-card__body">
+            <h3 class="service-card__title">Asesoría Contable</h3>
+            <p class="service-card__text">
+                Contabilidad, declaraciones tributarias, nómina y asesoría financiera para empresas.
+            </p>
+        </div>
+    </article>
+
+    <!-- Derecho Comercial -->
+    <article class="service-card">
+        <div class="service-card__image">
+            <div class="service-card__slider">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=700&q=80" alt="Derecho Comercial - Edificios corporativos" loading="lazy" class="active">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&q=80" alt="Derecho Comercial - Reunión de negocios" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=700&q=80" alt="Derecho Comercial - Sociedad mercantil" loading="lazy">
+            </div>
+        </div>
+        <div class="service-card__icon"><i class="fas fa-building"></i></div>
+        <div class="service-card__body">
+            <h3 class="service-card__title">Derecho Comercial</h3>
+            <p class="service-card__text">
+                Constitución de sociedades, contratos mercantiles, propiedad intelectual y marcas.
+            </p>
+        </div>
+    </article>
+
+    <!-- Derecho de Familia -->
+    <article class="service-card">
+        <div class="service-card__image">
+            <div class="service-card__slider">
+                <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=700&q=80" alt="Derecho de Familia - Familia unida" loading="lazy" class="active">
+                <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=700&q=80" alt="Derecho de Familia - Padres e hijos" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=700&q=80" alt="Derecho de Familia - Unión familiar" loading="lazy">
+            </div>
+        </div>
+        <div class="service-card__icon"><i class="fas fa-users"></i></div>
+        <div class="service-card__body">
+            <h3 class="service-card__title">Derecho de Familia</h3>
+            <p class="service-card__text">
+                Divorcios, custodia, alimentos, uniones maritales y procesos de sucesión.
+            </p>
+        </div>
+    </article>
+
+    <!-- Consultoría Empresarial -->
+    <article class="service-card">
+        <div class="service-card__image">
+            <div class="service-card__slider">
+                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=700&q=80" alt="Consultoría Empresarial - Reunión" loading="lazy" class="active">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=700&q=80" alt="Consultoría Empresarial - Presentación" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&q=80" alt="Consultoría Empresarial - Estrategia" loading="lazy">
+            </div>
+        </div>
+        <div class="service-card__icon"><i class="fas fa-handshake"></i></div>
+        <div class="service-card__body">
+            <h3 class="service-card__title">Consultoría Empresarial</h3>
+            <p class="service-card__text">
+                Asesoría integral para PYMES, emprendedores y empresas en crecimiento.
+            </p>
+        </div>
+    </article>
+</div>
         </div>
     </section>
 
@@ -285,7 +325,7 @@
                 <div class="survey__icon"><i class="fas fa-star"></i></div>
                 <h2 class="survey__title">Tu opinión es muy importante para nosotros</h2>
                 <p class="survey__text">
-                    Queremos saber cómo ha sido tu experiencia con nuestros servicios. 
+                    Queremos saber cómo ha sido tu experiencia con nuestros servicios.
                     Tu retroalimentación nos ayuda a mejorar cada día.
                 </p>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfSvcBkOB14gTk9qfmu-XFKA4auaKduAy7Q8Je4lbOiNxJfGg/viewform?pli=1" class="btn btn--primary" target="_blank" rel="noopener">
@@ -302,19 +342,18 @@
                 <span class="section__tag">Contáctanos</span>
                 <h2 class="section__title">Ponte en Contacto</h2>
                 <p class="section__subtitle">
-                    ¿Tienes preguntas, comentarios o quieres contratar nuestros servicios? 
+                    ¿Tienes preguntas, comentarios o quieres contratar nuestros servicios?
                     ¡Estaremos respondiéndote lo más pronto posible!
                 </p>
             </div>
 
             <div class="contact__grid">
-                <!-- Información de contacto -->
                 <div class="contact__info">
                     <div class="contact__item">
                         <div class="contact__item-icon"><i class="fas fa-phone"></i></div>
                         <div>
                             <h4>Teléfonos</h4>
-                            <a href="tel:3148695606">314 869 5606</a><br>
+                            <a href="tel:3148695606">314 869 5606</a>
                             <a href="tel:3238097573">323 809 7573</a>
                         </div>
                     </div>
@@ -345,15 +384,18 @@
                     </div>
 
                     <div class="contact__social">
-                        <a href="https://www.facebook.com/Heyojoalderecho%20" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/lgvlegalconsultores/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.tiktok.com/@lgv.legal.consult" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://wa.link/cxgte7" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/Heyojoalderecho" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/lgvlegalconsultores/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@lgv.legal.consult" aria-label="TikTok" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.link/cxgte7" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
 
-                <!-- Formulario -->
-                <form class="contact__form" id="contactForm" action="#" method="POST">
+                <form class="contact__form" id="contactForm" method="POST">
+                    <input type="hidden" name="access_key" value="TU_ACCESS_KEY_AQUI">
+                    <input type="hidden" name="subject" value="Nueva consulta desde el sitio web - LGV Legal Consultores">
+                    <input type="hidden" name="from_name" value="LGV Legal Consultores">
+
                     <div class="form-group">
                         <label for="nombre">Nombre completo *</label>
                         <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
@@ -388,6 +430,13 @@
                         <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
                     </div>
 
+                    <div class="form-group form-group--checkbox">
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <label for="privacidad">
+                            He leído y acepto la <a href="politica-privacidad.html" target="_blank">Política de Privacidad</a> *
+                        </label>
+                    </div>
+
                     <button type="submit" class="btn btn--primary btn--block">
                         <i class="fas fa-paper-plane"></i> Enviar Mensaje
                     </button>
@@ -404,13 +453,14 @@
                 <div class="footer__col">
                     <div class="logo logo--light">
                         <span class="logo__icon"><i class="fas fa-balance-scale"></i></span>
-                        <div class="logo__text">
+                        <span class="logo__text">
                             <span class="logo__title">LGV</span>
-                            <span class="logo__subtitle">Legal Consultores</span>
-                        </div>
+                            <span class="logo__divider"></span>
+                            <span class="logo__subtitle">LEGAL CONSULTORES</span>
+                        </span>
                     </div>
                     <p class="footer__text">
-                        Firma de abogados con enfoque humano, comprometida con la defensa 
+                        Firma de abogados con enfoque humano, comprometida con la defensa
                         de tus derechos y el bienestar de la sociedad colombiana.
                     </p>
                 </div>
@@ -457,70 +507,123 @@
                     <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="footer__credit">
-            <p>
-                Diseñado y desarrollado por
-                <a href="https://servitecbaq.com" target="_blank" rel="noopener" class="footer__credit-link">
-                    <i class="fas fa-code"></i> ServitecBAQ
-                </a>
-            </p>
+
+            <div class="footer__credit">
+                <p>
+                    Diseñado y desarrollado por
+                    <a href="https://servitecbaq.com" target="_blank" rel="noopener" class="footer__credit-link">
+                        <i class="fas fa-code"></i> ServitecBAQ
+                    </a>
+                </p>
+            </div>
         </div>
     </footer>
 
-    <!-- Botón WhatsApp flotante -->
+    <!-- WhatsApp flotante -->
     <a href="https://wa.me/573148695606" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- Botón volver arriba -->
+    <!-- Volver arriba -->
     <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
         <i class="fas fa-arrow-up"></i>
     </button>
+
+    <!-- Scripts -->
     <script src="js/form.js"></script>
-<script>
-    // Año dinámico
-    document.getElementById('year').textContent = new Date().getFullYear();
+    <script>
+        // Año dinámico
+        document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Menú móvil
-    const navToggle = document.getElementById('navToggle');
-    const nav = document.getElementById('nav');
-    navToggle.addEventListener('click', () => {
-        nav.classList.toggle('nav--open');
-        navToggle.classList.toggle('nav-toggle--active');
-    });
+        // Menú móvil
+        const navToggle = document.getElementById('navToggle');
+        const nav = document.getElementById('nav');
+        const navOverlay = document.getElementById('navOverlay');
 
-    document.querySelectorAll('.nav__link, .nav__cta').forEach(link => {
-        link.addEventListener('click', () => {
+        function openMenu() {
+            nav.classList.add('nav--open');
+            navToggle.classList.add('nav-toggle--active');
+            navOverlay.classList.add('nav-overlay--visible');
+            navToggle.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeMenu() {
             nav.classList.remove('nav--open');
             navToggle.classList.remove('nav-toggle--active');
+            navOverlay.classList.remove('nav-overlay--visible');
+            navToggle.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
+        navToggle.addEventListener('click', () => {
+            nav.classList.contains('nav--open') ? closeMenu() : openMenu();
         });
-    });
-
-    // Header con scroll
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-        header.classList.toggle('header--scrolled', window.scrollY > 50);
-    });
-
-    // Botón volver arriba
-    const backToTop = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-        backToTop.classList.toggle('back-to-top--visible', window.scrollY > 400);
-    });
-    backToTop.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Scroll reveal
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) entry.target.classList.add('visible');
+        navOverlay.addEventListener('click', closeMenu);
+        document.querySelectorAll('.nav__link, .nav__cta').forEach(link => {
+            link.addEventListener('click', closeMenu);
         });
-    }, { threshold: 0.1 });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeMenu();
+        });
 
-    document.querySelectorAll('.section__header, .service-card, .value-card, .about__content, .about__image, .contact__info, .contact__form')
-        .forEach(el => observer.observe(el));
+        // Header scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('header--scrolled', window.scrollY > 50);
+        }, { passive: true });
+
+        // Volver arriba
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('back-to-top--visible', window.scrollY > 400);
+        }, { passive: true });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Animación scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.section__header, .service-card, .value-card, .about__content, .about__image, .contact__info, .contact__form')
+            .forEach(el => observer.observe(el));
+    </script>
+<script>
+/* ===== CARRUSEL AUTOMÁTICO DE IMÁGENES ===== */
+document.addEventListener('DOMContentLoaded', () => {
+    const sliders = document.querySelectorAll('.service-card__slider');
+    
+    // Respeta preferencias de accesibilidad
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    
+    sliders.forEach((slider, index) => {
+        const images = slider.querySelectorAll('img');
+        if (images.length < 2) return;
+        
+        let currentIndex = 0;
+        
+        // Tiempo inicial aleatorio para que no cambien todas a la vez
+        const initialDelay = index * 800;
+        
+        setTimeout(() => {
+            setInterval(() => {
+                // Quitar active de la actual
+                images[currentIndex].classList.remove('active');
+                
+                // Siguiente imagen
+                currentIndex = (currentIndex + 1) % images.length;
+                
+                // Poner active a la nueva
+                images[currentIndex].classList.add('active');
+            }, 4000); // Cambia cada 4 segundos
+        }, initialDelay);
+    });
+});
 </script>
 </body>
 </html>
