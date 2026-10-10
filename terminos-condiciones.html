@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Términos y Condiciones de uso de LEGAL CONSULTORES S.A.S">
+    <title>Términos y Condiciones | LEGAL CONSULTORES S.A.S</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="legal-page">
+
+    <header class="header header--scrolled">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <span class="logo__icon"><i class="fas fa-balance-scale"></i></span>
+                <div class="logo__text">
+                    <span class="logo__title">LGV</span>
+                    <span class="logo__subtitle">Legal Consultores</span>
+                </div>
+            </a>
+            <nav class="nav" style="display:flex;">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Volver al inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="legal-content">
+        <div class="container">
+            <div class="legal-header">
+                <span class="section__tag">Documento Legal</span>
+                <h1 class="section__title">Términos y Condiciones de Uso</h1>
+                <p class="legal-date">Última actualización: [FECHA]</p>
+            </div>
+
+            <div class="legal-body">
+                <h2>1. Aceptación de los Términos</h2>
+                <p>
+                    El acceso y uso del sitio web de <strong>LEGAL CONSULTORES S.A.S</strong>
+                    implica la aceptación plena y sin reservas de los presentes Términos y Condiciones.
+                    Si no está de acuerdo con ellos, le solicitamos abstenerse de utilizar el sitio.
+                </p>
+
+                <h2>2. Uso Permitido del Sitio</h2>
+                <p>El usuario se compromete a utilizar el sitio web de manera lícita, sin:</p>
+                <ul>
+                    <li>Realizar actividades fraudulentas o ilegales.</li>
+                    <li>Intentar acceder a áreas restringidas del sitio.</li>
+                    <li>Introducir virus, malware o cualquier código dañino.</li>
+                    <li>Realizar actos que atenten contra la propiedad intelectual.</li>
+                    <li>Enviar comunicaciones no solicitadas (spam).</li>
+                    <li>Suplantar la identidad de terceros.</li>
+                </ul>
+
+                <h2>3. Registro y Datos del Usuario</h2>
+                <p>
+                    Al enviar información a través del formulario de contacto, el usuario garantiza
+                    que los datos suministrados son verídicos, exactos y actualizados. El usuario es
+                    responsable de mantener la confidencialidad de su información.
+                </p>
+
+                <h2>4. Propiedad Intelectual</h2>
+                <p>
+                    Todos los contenidos del sitio web son propiedad exclusiva de LEGAL CONSULTORES
+                    S.A.S o de sus licenciantes. Queda prohibida su reproducción, distribución,
+                    modificación o uso comercial sin autorización previa y escrita.
+                </p>
+
+                <h2>5. Protección de Datos Personales</h2>
+                <p>
+                    El tratamiento de los datos personales recolectados a través de este sitio se
+                    rige por nuestra <a href="politica-privacidad.html"><strong>Política de Privacidad</strong></a>,
+                    la cual hace parte integral de estos Términos y Condiciones.
+                </p>
+
+                <h2>6. Servicios Profesionales</h2>
+                <p>
+                    Los servicios legales y contables ofrecidos por LEGAL CONSULTORES S.A.S se
+                    prestan bajo contrato escrito y no se entienden contratados por el simple uso
+                    de este sitio web. Los honorarios, alcance y condiciones serán definidos en
+                    cada caso particular.
+                </p>
+
+                <h2>7. Limitación de Responsabilidad</h2>
+                <p>
+                    LEGAL CONSULTORES S.A.S no será responsable por:
+                </p>
+                <ul>
+                    <li>Daños derivados del uso incorrecto de la información del sitio.</li>
+                    <li>Interrupciones técnicas del servicio.</li>
+                    <li>Contenido de sitios de terceros enlazados.</li>
+                    <li>Decisiones tomadas por el usuario sin asesoría profesional personalizada.</li>
+                </ul>
+
+                <h2>8. Modificaciones</h2>
+                <p>
+                    LEGAL CONSULTORES S.A.S se reserva el derecho de modificar estos Términos y
+                    Condiciones en cualquier momento. Las modificaciones entrarán en vigor desde
+                    su publicación en el sitio web.
+                </p>
+
+                <h2>9. Ley Aplicable y Jurisdicción</h2>
+                <p>
+                    Estos Términos se rigen por las leyes de la República de Colombia. Cualquier
+                    controversia será resuelta por los jueces competentes de la ciudad de
+                    <strong>[Ciudad]</strong>, Colombia.
+                </p>
+
+                <h2>10. Contacto</h2>
+                <p>
+                    Para consultas sobre estos Términos y Condiciones, puede escribirnos a
+                    <strong>heyojoalderecho@gmail.com</strong>.
+                </p>
+            </div>
+
+            <div class="legal-actions">
+                <a href="index.html" class="btn btn--primary">
+                    <i class="fas fa-arrow-left"></i> Volver al Inicio
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__bottom" style="padding: 30px 0;">
+                <p>&copy; <span id="year"></span> LEGAL CONSULTORES S.A.S. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

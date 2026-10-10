@@ -1122,3 +1122,203 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     .survey__box { padding: 40px 24px; }
     .stat__number { font-size: 1.8rem; }
 }
+/* ===== PÁGINAS LEGALES ===== */
+.legal-page {
+    padding-top: 90px;
+    background: var(--color-bg);
+}
+
+.legal-content {
+    padding: 60px 0 80px;
+}
+
+.legal-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--color-border);
+}
+
+.legal-header .section__tag {
+    margin-bottom: 20px;
+}
+
+.legal-date {
+    font-size: 14px;
+    color: var(--color-text-light);
+    margin-top: 16px;
+    font-style: italic;
+}
+
+.legal-body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.legal-body h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin: 40px 0 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.legal-body h2:first-child { margin-top: 0; }
+
+.legal-body p {
+    color: var(--color-text);
+    margin-bottom: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.legal-body ul {
+    list-style: none;
+    margin: 16px 0 24px 0;
+    padding-left: 0;
+}
+
+.legal-body ul li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 10px;
+    color: var(--color-text);
+    line-height: 1.7;
+}
+
+.legal-body ul li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: var(--color-accent);
+    font-size: 13px;
+}
+
+.legal-body a {
+    color: var(--color-accent);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.legal-body a:hover { color: var(--color-primary); }
+
+.legal-footer-note {
+    margin-top: 40px;
+    padding: 20px;
+    background: var(--color-bg-alt);
+    border-left: 4px solid var(--color-accent);
+    border-radius: var(--radius-sm);
+    font-style: italic;
+    text-align: left !important;
+}
+
+.legal-actions {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid var(--color-border);
+}
+
+/* Responsive páginas legales */
+@media (max-width: 768px) {
+    .legal-page { padding-top: 80px; }
+    .legal-header { margin-bottom: 30px; }
+    .legal-body h2 { font-size: 1.25rem; }
+    .legal-body p { text-align: left; }
+}
+/* ===== MENSAJES DEL FORMULARIO ===== */
+.form-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 18px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 18px;
+    font-size: 14.5px;
+    line-height: 1.5;
+    animation: slideDown 0.4s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.form-message i {
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.form-message--success {
+    background: #ECFDF5;
+    border: 1px solid #A7F3D0;
+    color: #065F46;
+}
+
+.form-message--success i { color: #10B981; }
+
+.form-message--error {
+    background: #FEF2F2;
+    border: 1px solid #FECACA;
+    color: #991B1B;
+}
+
+.form-message--error i { color: #EF4444; }
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estado de carga del botón */
+.btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none !important;
+}
+/* ===== CRÉDITO DESARROLLADOR ===== */
+.footer__credit {
+    text-align: center;
+    padding: 20px 0 28px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer__credit p {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer__credit-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-accent);
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 50px;
+    background: rgba(201, 162, 39, 0.1);
+    border: 1px solid rgba(201, 162, 39, 0.25);
+    transition: var(--transition);
+}
+
+.footer__credit-link:hover {
+    background: var(--color-accent);
+    color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(201, 162, 39, 0.35);
+}
+
+.footer__credit-link i { font-size: 12px; }

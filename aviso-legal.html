@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aviso Legal de LEGAL CONSULTORES S.A.S">
+    <title>Aviso Legal | LEGAL CONSULTORES S.A.S</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="legal-page">
+
+    <header class="header header--scrolled">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <span class="logo__icon"><i class="fas fa-balance-scale"></i></span>
+                <div class="logo__text">
+                    <span class="logo__title">LGV</span>
+                    <span class="logo__subtitle">Legal Consultores</span>
+                </div>
+            </a>
+            <nav class="nav" style="display:flex;">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Volver al inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="legal-content">
+        <div class="container">
+            <div class="legal-header">
+                <span class="section__tag">Documento Legal</span>
+                <h1 class="section__title">Aviso Legal</h1>
+                <p class="legal-date">Última actualización: [FECHA]</p>
+            </div>
+
+            <div class="legal-body">
+                <h2>1. Información General</h2>
+                <p>
+                    El presente sitio web es propiedad de <strong>LEGAL CONSULTORES S.A.S</strong>,
+                    sociedad comercial identificada con NIT <strong>[NIT]</strong>, con domicilio en
+                    <strong>[Dirección]</strong>, correo electrónico <strong>heyojoalderecho@gmail.com</strong>
+                    y teléfonos <strong>314 869 5606 / 323 809 7573</strong>.
+                </p>
+
+                <h2>2. Objeto del Sitio Web</h2>
+                <p>
+                    Este sitio web tiene como finalidad dar a conocer los servicios profesionales de
+                    asesoría legal y contable ofrecidos por LEGAL CONSULTORES S.A.S, así como facilitar
+                    el contacto con potenciales clientes.
+                </p>
+
+                <h2>3. Carácter Informativo</h2>
+                <p>
+                    <strong>El contenido de este sitio web es meramente informativo y no constituye
+                    asesoría legal, contable o tributaria para casos específicos.</strong> La información
+                    aquí publicada no reemplaza la consulta profesional personalizada. Para obtener
+                    asesoría aplicable a su caso particular, debe contratar nuestros servicios
+                    profesionales.
+                </p>
+
+                <h2>4. Relación Abogado-Cliente</h2>
+                <p>
+                    El envío de un mensaje a través del formulario de contacto, correo electrónico o
+                    WhatsApp <strong>no crea por sí mismo una relación abogado-cliente</strong> ni
+                    obliga a LEGAL CONSULTORES S.A.S a prestar servicios profesionales. Dicha relación
+                    solo se perfecciona mediante contrato escrito y aceptación expresa de ambas partes.
+                </p>
+
+                <h2>5. Propiedad Intelectual</h2>
+                <p>
+                    Todos los contenidos de este sitio web (textos, imágenes, logotipos, diseño,
+                    código fuente) son propiedad de LEGAL CONSULTORES S.A.S o de terceros que han
+                    autorizado su uso, y están protegidos por las normas de propiedad intelectual
+                    colombianas e internacionales.
+                </p>
+                <p>
+                    Queda prohibida la reproducción total o parcial sin autorización previa y por
+                    escrito.
+                </p>
+
+                <h2>6. Enlaces a Terceros</h2>
+                <p>
+                    Este sitio puede contener enlaces a sitios web de terceros. LEGAL CONSULTORES
+                    S.A.S no se hace responsable del contenido, políticas de privacidad o prácticas
+                    de dichos sitios.
+                </p>
+
+                <h2>7. Limitación de Responsabilidad</h2>
+                <p>
+                    LEGAL CONSULTORES S.A.S no garantiza la disponibilidad ininterrumpida del sitio
+                    web ni la ausencia de errores en el contenido. No se hace responsable de daños
+                    directos o indirectos derivados del uso de la información contenida en este sitio.
+                </p>
+
+                <h2>8. Legislación Aplicable</h2>
+                <p>
+                    Este Aviso Legal se rige por las leyes de la República de Colombia. Cualquier
+                    controversia será sometida a la jurisdicción de los tribunales colombianos.
+                </p>
+            </div>
+
+            <div class="legal-actions">
+                <a href="index.html" class="btn btn--primary">
+                    <i class="fas fa-arrow-left"></i> Volver al Inicio
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__bottom" style="padding: 30px 0;">
+                <p>&copy; <span id="year"></span> LEGAL CONSULTORES S.A.S. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

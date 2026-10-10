@@ -8,6 +8,11 @@
     <meta name="author" content="LEGAL CONSULTORES S.A.S">
     <title>LEGAL CONSULTORES S.A.S | Asesoría Legal y Contable en Colombia</title>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.svg">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +23,27 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lgvlegalconsultores.com/">
+    <meta property="og:title" content="LEGAL CONSULTORES S.A.S | Asesoría Legal y Contable">
+    <meta property="og:description" content="Firma de abogados con enfoque humano. Asesoría legal y contable en toda Colombia. Consulta gratuita.">
+    <meta property="og:image" content="https://lgvlegalconsultores.com/images/og-image.jpg">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:site_name" content="LEGAL CONSULTORES S.A.S">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LEGAL CONSULTORES S.A.S">
+    <meta name="twitter:description" content="Asesoría legal y contable con enfoque humano en toda Colombia.">
+    <meta name="twitter:image" content="https://lgvlegalconsultores.com/images/og-image.jpg">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://lgvlegalconsultores.com/">
+
+    <!-- Theme color -->
+    <meta name="theme-color" content="#1B2A4A">
 </head>
 <body>
 
@@ -425,11 +451,19 @@
             <div class="footer__bottom">
                 <p>&copy; <span id="year"></span> LEGAL CONSULTORES S.A.S. Todos los derechos reservados.</p>
                 <ul class="footer__legal">
-                    <li><a href="#">Política de Privacidad</a></li>
-                    <li><a href="#">Aviso Legal</a></li>
-                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                    <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
                 </ul>
             </div>
+        </div>
+        <div class="footer__credit">
+            <p>
+                Diseñado y desarrollado por
+                <a href="https://servitecbaq.com" target="_blank" rel="noopener" class="footer__credit-link">
+                    <i class="fas fa-code"></i> ServitecBAQ
+                </a>
+            </p>
         </div>
     </footer>
 
@@ -442,70 +476,50 @@
     <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
         <i class="fas fa-arrow-up"></i>
     </button>
+    <script src="js/form.js"></script>
+<script>
+    // Año dinámico
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-    <!-- Scripts -->
-    <script>
-        // Año dinámico en el footer
-        document.getElementById('year').textContent = new Date().getFullYear();
+    // Menú móvil
+    const navToggle = document.getElementById('navToggle');
+    const nav = document.getElementById('nav');
+    navToggle.addEventListener('click', () => {
+        nav.classList.toggle('nav--open');
+        navToggle.classList.toggle('nav-toggle--active');
+    });
 
-        // Menú móvil
-        const navToggle = document.getElementById('navToggle');
-        const nav = document.getElementById('nav');
-        navToggle.addEventListener('click', () => {
-            nav.classList.toggle('nav--open');
-            navToggle.classList.toggle('nav-toggle--active');
+    document.querySelectorAll('.nav__link, .nav__cta').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('nav--open');
+            navToggle.classList.remove('nav-toggle--active');
         });
+    });
 
-        // Cerrar menú al hacer click en un enlace
-        document.querySelectorAll('.nav__link, .nav__cta').forEach(link => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('nav--open');
-                navToggle.classList.remove('nav-toggle--active');
-            });
+    // Header con scroll
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+        header.classList.toggle('header--scrolled', window.scrollY > 50);
+    });
+
+    // Botón volver arriba
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        backToTop.classList.toggle('back-to-top--visible', window.scrollY > 400);
+    });
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('visible');
         });
+    }, { threshold: 0.1 });
 
-        // Header con scroll
-        const header = document.getElementById('header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('header--scrolled');
-            } else {
-                header.classList.remove('header--scrolled');
-            }
-        });
-
-        // Botón volver arriba
-        const backToTop = document.getElementById('backToTop');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 400) {
-                backToTop.classList.add('back-to-top--visible');
-            } else {
-                backToTop.classList.remove('back-to-top--visible');
-            }
-        });
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // Animación scroll reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.section__header, .service-card, .value-card, .about__content, .about__image, .contact__info, .contact__form')
-            .forEach(el => observer.observe(el));
-
-        // Manejo del formulario
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('¡Gracias por contactarnos! Hemos recibido tu mensaje y te responderemos lo antes posible.');
-            e.target.reset();
-        });
-    </script>
-
+    document.querySelectorAll('.section__header, .service-card, .value-card, .about__content, .about__image, .contact__info, .contact__form')
+        .forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
