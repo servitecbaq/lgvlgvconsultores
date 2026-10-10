@@ -1320,5 +1320,220 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(201, 162, 39, 0.35);
 }
+/* ===== BALANZA ANIMADA DECORATIVA ===== */
+.balance-decoration {
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    transform: translateY(-50%);
+    width: 280px;
+    height: 280px;
+    opacity: 75%;
+    pointer-events: none;
+    z-index: 1;
+}
 
+.balance-svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 0 20px rgba(201, 162, 39, 0.3));
+}
+
+/* El brazo se balancea sutilmente */
+.balance-beam {
+    transform-origin: 100px 55px; /* Centro del pivote */
+    animation: balanceSwing 6s ease-in-out infinite;
+}
+
+@keyframes balanceSwing {
+    0%, 100% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .balance-decoration {
+        width: 220px;
+        height: 220px;
+        right: 5%;
+        opacity: 0.08;
+    }
+}
+
+@media (max-width: 768px) {
+    .balance-decoration {
+        width: 180px;
+        height: 180px;
+        top: auto;
+        bottom: 40px;
+        right: 20px;
+        transform: none;
+        opacity: 0.06;
+    }
+}
+
+/* Respeta preferencia de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    .balance-beam {
+        animation: none;
+    }
+}
+.balance-beam {
+    transform-origin: 100px 55px;
+    animation: balanceSwing 6s ease-in-out infinite;
+}
+
+/* Los platos se contra-mueven para simular peso */
+.balance-pan--left {
+    transform-origin: 35px 55px;
+    animation: panCounterLeft 6s ease-in-out infinite;
+}
+
+.balance-pan--right {
+    transform-origin: 165px 55px;
+    animation: panCounterRight 6s ease-in-out infinite;
+}
+
+@keyframes balanceSwing {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+}
+
+@keyframes panCounterLeft {
+    0%, 100% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+}
+
+@keyframes panCounterRight {
+    0%, 100% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+}
+.balance-beam {
+    transform-origin: 100px 55px;
+    animation: balanceSwing 6s ease-in-out infinite;
+}
+
+/* Los platos se contra-mueven para simular peso */
+.balance-pan--left {
+    transform-origin: 35px 55px;
+    animation: panCounterLeft 6s ease-in-out infinite;
+}
+
+.balance-pan--right {
+    transform-origin: 165px 55px;
+    animation: panCounterRight 6s ease-in-out infinite;
+}
+
+@keyframes balanceSwing {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+}
+
+@keyframes panCounterLeft {
+    0%, 100% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+}
+
+@keyframes panCounterRight {
+    0%, 100% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+}
+/* Animación sutil del fondo del hero */
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: -20px;
+    background: 
+        url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920&q=80') center 30% / cover no-repeat;
+    animation: heroBreath 20s ease-in-out infinite;
+    z-index: 0;
+}
+
+@keyframes heroBreath {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+/* Ajustar el hero original para usar ::before */
+.hero {
+    position: relative;
+    background: none; /* Quitar el background del .hero */
+    overflow: hidden;
+}
+
+.hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(15, 27, 51, 0.95) 0%, rgba(27, 42, 74, 0.85) 50%, rgba(27, 42, 74, 0.7) 100%);
+    z-index: 1;
+}
+
+.hero__container {
+    position: relative;
+    z-index: 2;
+}
+.btn--primary {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn--primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.6s ease;
+}
+
+.btn--primary:hover::before {
+    left: 100%;
+}
+.hero__badge,
+.hero__title,
+.hero__subtitle,
+.hero__buttons,
+.hero__stats {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero__badge { animation-delay: 0.2s; }
+.hero__title { animation-delay: 0.4s; }
+.hero__subtitle { animation-delay: 0.6s; }
+.hero__buttons { animation-delay: 0.8s; }
+.hero__stats { animation-delay: 1s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero__badge,
+    .hero__title,
+    .hero__subtitle,
+    .hero__buttons,
+    .hero__stats {
+        opacity: 1;
+        transform: none;
+        animation: none;
+    }
+}
+.hero {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="24" font-size="24">⚖️</text></svg>') 16 16, auto;
+}
 .footer__credit-link i { font-size: 12px; }
